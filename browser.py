@@ -13,6 +13,7 @@ class Browser:
         self.options.add_argument('--disable-web-security')
         self.options.add_argument('--allow-running-insecure-content')
         self.driver = webdriver.Chrome(options=self.options)
+        self.driver.maximize_window()
         try:
             self.driver.get(self.url)
         except WebDriverException:
@@ -23,5 +24,10 @@ class Browser:
         time.sleep(2)
         html = self.driver.find_element(By.TAG_NAME, value='html')
         html.send_keys(Keys.SPACE)
+
+    def get_canvas_coordinate(self):
+        canvas = self.driver.find_element(By.TAG_NAME, value='canvas')
+        print(canvas.location)
+        print(canvas.size)
 
 
