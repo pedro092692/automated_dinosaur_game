@@ -1,6 +1,7 @@
-from  browser import Browser
+from browser import Browser
 from bot import Bot
 import time
+import os
 
 browser = Browser()
 bot = Bot()
@@ -17,3 +18,4 @@ while True:
     # check if there is an obstacle
     bot.check_collision(img=img)
     time.sleep(0.01)
+
