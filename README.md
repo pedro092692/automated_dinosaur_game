@@ -1,7 +1,7 @@
 # Google Chrome Dinosaur game bot
 
 This bot plays automatically the Google Chrome game based on a snapshot of 
-the screen and check if there is an obstacle like cactus or to achieve this 
+the screen and check if there is an obstacle like cactus or bird to achieve this 
 was used pyautogui and selenium to execute the game, Note: for the correct functionality you display resolution must be 1920x1080
 
 ## Screenshots:
